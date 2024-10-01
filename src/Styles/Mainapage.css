@@ -1,0 +1,156 @@
+.flame-board {
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    justify-content: center;
+    margin-top: 8rem;
+    flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+}
+
+#letters, #letters1, #letters2 {
+    width: 3rem;
+}
+
+#letters1 {
+    width: 2.5rem;
+}
+
+#letters2 {
+    width: 3.4rem;
+}
+
+.flame-numbers {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.input-box {
+    text-align: center;
+    margin-top: 12rem;
+}
+
+#name1, #name2 {
+    border-radius: 0.5rem;
+    width: 24rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-family: cursive;
+    border: none;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .2) inset;
+    margin-bottom: 0.5rem;
+}
+
+#name1::placeholder, #name2::placeholder {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+#submit {
+    padding: 0.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    border: 3px solid black;
+    font-family: cursive;
+    background-color: rgb(241, 12, 12);
+    color: white;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .2);
+}
+
+#submit:hover {
+    background-color: rgb(241, 236, 236);
+    cursor: pointer;
+    color: black;
+}
+
+.sr, .pa {
+    padding: 0.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    border: 3px solid black;
+    font-family: cursive;
+    background-color: rgb(241, 12, 12);
+    color: white;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .2) inset;
+}
+
+.pa {
+    margin-right: 0.5rem;
+}
+
+.sr:hover, .pa:hover {
+    background-color: rgb(241, 236, 236);
+    cursor: pointer;
+    color: black;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .flame-board {
+        gap: 2rem;
+        margin-top: 5rem;
+    }
+
+    #letters, #letters1, #letters2 {
+        width: 2.5rem; /* Adjust image size for smaller screens */
+    }
+
+    .flame-numbers {
+        font-size: 2rem; /* Reduce font size on smaller screens */
+    }
+
+    .input-box {
+        margin-top: 8rem;
+    }
+
+    #name1, #name2 {
+        width: 20rem; /* Adjust input width for smaller screens */
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    #submit, .sr, .pa {
+        font-size: 1rem; /* Adjust button font size for smaller screens */
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .flame-board {
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    #letters, #letters1, #letters2 {
+        width: 2rem; /* Further reduce image size for very small screens */
+    }
+
+    .flame-numbers {
+        font-size: 1.5rem; /* Reduce font size further for very small screens */
+    }
+
+    .input-box {
+        margin-top: 6rem;
+    }
+
+    #name1, #name2 {
+        width: 100%; /* Make inputs full width */
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    #submit, .sr, .pa {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 0.4rem;
+    }
+}
